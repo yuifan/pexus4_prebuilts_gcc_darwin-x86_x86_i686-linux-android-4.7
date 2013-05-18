@@ -1,55 +1,15 @@
-Sources for this prebuilt toolchain can be downloaded from Android Opensource
-Project GIT repository git://android.git.kernel.org/toolchain.
-
-gcc/ synced to
-	commit 2f2d3b42b0ea0c4871518c7b6176bd2b55ae527d
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Mon Dec 13 12:58:16 2010 -0800
-
-    And rollback the following two androideabi related patches.
-    commit a4d9421024ed3f70aede5b11f977d264eb69bf61
-    Author: Jing Yu <jingyu@google.com>
-    Date:   Tue Aug 10 10:08:15 2010 -0700
-
-    commit f01e65905acd1e2052e875130cb723a658765bc8
-    Author: Jing Yu <jingyu@google.com>
-    Date:   Thu Jul 22 14:39:44 2010 -0700
-
-binutils/ synced to
-	commit 8a5a8339de3149b7f99caf08e9cb72467d60cd01
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 4 17:22:38 2010 -0700
-
-gdb/ synced to
-	commit b028dbaa736a574062136861a11e76a9ab6b4bb3
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Mon Dec 13 14:44:59 2010 -0800
-
-gmp/ synced to
-	commit 9fb242a79dd122d7fbf867daf5620dba6927bd2e
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 5 17:43:59 2009 -0800
-
-mpfr/ synced to
-	commit da6dfde986af1b56f0f41e9f5de61d093fa8af90
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 5 17:50:13 2009 -0800
-
-build/ synced to
-	commit 4cc02faaa7e8828f9458b1828a6f85e7791ae2aa
-	Author: Jim Huang <jserv@0xlab.org>
-	Date:   Fri Aug 20 23:30:37 2010 +0800
-
-   And rollback the following 3 patches.
-   commit de263c26a7680529baca731c003bc58b68d72511
-   Author: Jing Yu <jingyu@google.com>
-   Date:   Thu Aug 12 15:52:15 2010 -0700
-
-   commit a80c0ec10d3832039c5d5a481f5f62172eddc929
-   Author: Jing Yu <jingyu@google.com>
-   Date:   Tue Aug 10 10:12:29 2010 -0700
-
-   commit f82379147a1d2c484dcc1bb47c4ecd90e40fa3e2
-   Author: Jing Yu <jingyu@google.com>
-   Date:   Thu Jul 22 14:27:24 2010 -0700
-
+toolchain/build.git              de36c1312eaf8d1b23a8d79244675f395c361e73 Avoid race condition by "make install -j1" in canadian build->target
+toolchain/gmp.git                e6b9669dafc6a5f83c80b4b4176359b78bccdc90 Add gmp-5.0.5.tar.bz2
+toolchain/mpfr.git               bfcf1bfa38469208aaad8873cd4c68781061d90f add mpfr-3.1.1.tar.bz2
+toolchain/mpc.git                835d16e92eed875638a8b5d552034c3b1aae045b add mpc-1.0.1.tar.gz
+toolchain/cloog.git              b522eced5dd70c8536c15f044078498658fb9219 add cloog-0.17.0.tar.gz
+toolchain/ppl.git                8ba1875b4c5341d902321761022a6d2a0b5b19a4 add ppl-1.0.tar.bz2
+toolchain/expat.git              40172a0ae9d40a068f1e1a48ffcf6a1ccf765ed5 expat package for building gdb-7.3
+toolchain/binutils.git           8415ff0aaeb157307bb01a45373dba81919882fc Merge "Fix the "DIV usage mismatch between blah.o and output" error"
+toolchain/gcc.git                7f9f4477cbebb22723af8c0fac55aefc1228e02c Fix x86 GCC4.7 segfault in i386.c distance_non_agu_define_in_bb()
+toolchain/gdb.git                87c2a8617d772060c22533ed1626fca7f0649ca0 Merge "Fix default isatized_symbol_value handler"
+toolchain/python.git             88d9000040cfe698e8e32e071880ed8b41e11216 Remove *.info
+toolchain/clang.git (release_32) 9d4223132b17b9f647203b886fe09e7555ab9ab6 Misc fixes
+toolchain/llvm.git (release_32)  9854c4870dfec924c4c2fca0b6d406dc1eff4e32 Fix gnustl-shared-1 unit test failure.
+toolchain/clang.git (release_31) 4ee97488c51806ac044ff5b6c70f07d1be8dc339 Leave -fexception alone since it's enabled by default
+toolchain/llvm.git (release_31)  9e9a074a457f0db61a0f7977bbf5e3c4afebe2e0 Fix canadian build
